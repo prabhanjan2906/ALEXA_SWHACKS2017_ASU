@@ -1,0 +1,7 @@
+welcome: Hi There, Alexa is now your personal speech assistant. Can I know whom should I assist ?
+
+round: Can you repeat the numbers {{ numbers|join(", ") }} backwards?
+
+win: Good job!
+
+lose: Sorry, that's the wrong answer.
