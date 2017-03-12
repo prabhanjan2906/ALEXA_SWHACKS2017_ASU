@@ -1,0 +1,37 @@
+{
+
+    "intents": [{
+
+        "intent": "IntroIntent",
+
+        "slots": [{
+
+            "name": "Name",
+
+            "type": "AMAZON.US_STATE"
+        }]
+    }, {
+
+        "intent": "NumberOfWordIntent",
+
+        "slots": [{
+
+            "name": "NoofWords",
+
+            "type": "AMAZON.NUMBER"
+        }]
+    },               
+               {
+
+        "intent": "SpeechLearnIntent",
+
+        "slots": [{
+
+            "name": "Word",
+
+            "type": "AMAZON.US_STATE"
+
+        }]}
+]
+}
+              

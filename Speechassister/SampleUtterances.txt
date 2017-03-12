@@ -1,0 +1,8 @@
+
+IntroIntent his name is {Name}
+IntroIntent her name is {Name}
+IntroIntent name is {Name}
+NumberOfWordIntent Do {NoofWords}
+SpeechLearnIntent fine
+SpeechLearnIntent {Word}
+SpeechLearnIntent the word is {Word}
