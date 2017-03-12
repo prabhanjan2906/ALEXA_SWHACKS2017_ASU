@@ -45,13 +45,17 @@ def number_word(noofwords):
 @ask.intent("SpeechLearnIntent" , mapping={'word': 'Word'})
 
 def speech_round(word):
+	if word == 'cancel':
+		return statement('Hey,nice talking to you'+session.attributes['namep']+', will talk again soon')
 	simple_words =['cat','mat','bat','rat','pat','sky','ant','eat','dad','dry','try','my','spy','cry','dog','boy','girl']
 	medium_words =['madam','daddy','mummy','shop','drop','crop','laugh','hello','smile','help','famous','slow','fast','health','happy','smile']
 	complex_words =['forest','ocean','earth','moon','hundred','thousand','million','molten','fairy','mother','father','tortoise','rabbits','Lion','Elephant','bird']
+	
 	from urllib.request import Request, urlopen, URLError
 	request = Request('http://randomword.setgetgo.com/get.php')
 	response = urlopen(request)
 	random_word = response.read().decode('UTF-8');
+	
 	if int(session.attributes['callFirst']) < int(session.attributes['wordsnumber']):
 		if session.attributes['callFirst'] == 0:
 			session.attributes['callFirst']= session.attributes['callFirst']+1
